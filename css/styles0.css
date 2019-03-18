@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+.example {
+    position: center;
+    background-color:rgb(222,222,222);
+    width:768px;
+    overflow:hidden;
+    margin:20px auto;
+    padding:20px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+body {
+    font-size: 16px;
+    color: #555;
+    background-color: #d9d9d9;
+    font-family: 'Oxygen', sans-serif;
+}
+/* custom styles */
+.tn3-gallery {
+    width: 768px;
+    height: 559px;
+}
+.tn3-image {
+    width: 768px;
+    height: 512px;
+}
+.tn3-controls-bg {
+    width: 768px;
+}
+.tn3-thumbs {
+    width: 565px;
+}
+#containerz {
+  height: 3000px;
+  padding-top: 300px;
+
+}
+
+.button {
+  padding: 15px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background: transparent;
+}
+
+.sticky {
+  display: block;
+  width: 100%;
+}
+
+.picon {
+  float: right;
+  right:0;
+  width: 10%;
+  height: 10px;
+}
+
+
+.mobile-sticky {
+  position: fixed !important;
+  top: 0;
+}
+
+
+
+
+
+#header-nav {
+    background-color: #1B3769;
+    border-radius: 0;
+    border: 0;
+    color:rgba(255, 255, 255, 0.5);
+}
+
+
+/*.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+*/
+  header .logo{
+      display: inline-block;
+      position: relative;
+      margin: 0.5em 0em;
+  }
+@font-face {
+    font-family: "Cloud-Sans-Bold";
+    src:url("C:\Projects\Site Adi\Cloud-LightBold\Cloud-Bold.otf");
+}
+.navbar-brand{
+    padding-top: 25px;
+}
+
+.navbar-brand h1{
+    font-family: "Cloud-Sans-Bold", serif;
+    color: #d9d9d9;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-brand p{
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: .9em;
+    margin-top: 15px;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: #d9d9d9;
+    text-align: center;
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+#phone {
+    margin-top: -10px;
+    font-size: .65em;
+}
+
+#phone a { /* Phone number */
+    text-align: right;
+    padding-bottom: 0;
+}
+section.content {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 7em 1em 5em;
+}
+
+.navbar-brand buttn.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top: -30px;
+}
+
+#servicii_h
+{
+    font-size: 3em;
+    color: #003b6a;
+    padding: 0px 0px 0px 10px;
+    text-align: center;
+
+}
+
+#servicii
+{
+    background-color: rgb(222,222,222);
+}
+#servicii_content
+{
+    padding: 0px 0px 0px 10px;
+    font-size: 1.7em;
+    text-align: justify;
+    text-shadow: 0.2px 0.2px 0.2px #222;
+}
+
+#contact_content
+{
+    padding: 0px 0px 0px 10px;
+    font-size: 1.7em;
+    text-align: justify;
+    text-shadow: 0.2px 0.2px 0.2px #222;
+}
+
+
+/* END HEADER */
+
+/* Large devices only */
+@media (min-width: 1200px){
+    .jumbotron{
+        background: url('../images/jumbotron_1200.jpg') no-repeat;
+        background-position: center center;
+        height: 436px;
+        box-shadow: 0 0 0 50px #d9d9d9;
+        border: 2px solid #d9d9d9;
+    }
+}
+/* medium devices only */
+@media (min-width: 992px) and (max-width: 1199px){
+    .jumbotron{
+        background: url('../images/jumbotron_992.jpg') no-repeat;
+        background-position: center center;
+        height: 360px;
+        box-shadow: 0 0 50px #d9d9d9;
+        border: 2px solid #d9d9d9;
+    }
+}
+
+/* Small and Medium devices only */
+@media (min-width: 768px) and (max-width: 1199px){
+    #nav-list {
+        font-size: .65em;
+    }
+    #phone{
+        font-size: .65em;
+    }
+}
+
+/* Small devices only */
+@media (min-width: 768px) and (max-width: 992px){
+    .jumbotron{
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        background-position: center center;
+        height: 278px;
+        box-shadow: 0 0 50px #d9d9d9;
+        border: 2px solid #d9d9d9;
+    }
+
+
+}
+
+/* Extra small devices only */
+@media (max-width: 767px){
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        padding-top: 10px;
+        font-size: 5vw; /* 1 vw = 1% of viewport width */
+    }
+    .navbar-brand p {
+        font-size: .7em;
+        margin-top: 12px;
+    }
+    #collapsable-nav a { /* Collapsed nav menu text */
+        font-size: 1.2em;
+      }
+      #collapsable-nav a span { /* Collapsed nav menu glyph */
+        font-size: 1em;
+        margin-right: 5px;
+      }
+      #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+      }
+      #xs-deliver {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+      .jumbotron {
+          /*margin-top: 30px;*/
+          padding: 0;
+          box-shadow: 0 0 50px #d9d9d9;
+          border: 2px solid #d9d9d9;
+      }
+      #servicii_content
+      {
+          padding: 0px 0px 0px 10px;
+          font-size: 1.22em;  
+          text-align: justify;
+          text-shadow: 0.2px 0.2px 0.2px #222;
+      }
+      #contact_content
+      {
+        font-size: 1.22em;
+      }
+}
+/* Copy and paste this CSS into your stylesheet */
+
+/* CSS to block call button from showing on devices not likely to be phones */
+@media (min-width: 569px) {
+    .mobile-button {
+      display: none;
+    }
+    }
+    
+    
+    @media (max-width: 568px) {
+    .mobile-button {
+    max-width: 140px;
+    height: 45px;
+    background-color: rgba(222, 94, 26, 0.7);
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: solid 1px rgba(222, 94, 26, 0.9);
+    border-bottom-width: 0px;
+    border-width: 2px;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    position: fixed;
+    vertical-alignment: bottom;
+    z-index: 999;
+    text-align: center;
+    }
+    
+    .call-icon {
+        float: left;
+        color: #ffffff;
+    }
+    
+    .call-button {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5px 0 5px;
+    }
+    
+    .call-button p {
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 600;
+        position: relative;
+        line-height: 1.4;
+        top: 3px;
+    }
+    .call-button a {
+    text-decoration: none;
+    }
+    
+    #callbutton {
+    display: block;
+    }
+    }
